@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/710a6428b2.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./Group 718.jpg" alt="" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div>
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About us</a></li>
+                        <li><a href="#username">Contact us</a></li>
+                        <li>
+                            <div class="cart-btn">
+                                <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                                <p class="cart-items">0</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <!-- <img src="./images/samosa.jpg" alt=""> -->
+                    <P><a href="{{url_for('profile')}}"> USER</a></P>
+                </div>
+                <div class="exit">
+                    <a href="{{url_for('logout')}}">Logout<i class="fa-duotone fa-arrow-right-from-bracket"></i></a>
+
+                </div>
+            </div>
+        </nav>
+        <section>
+            <header class="hero2">
+                <div class="banner">
+                    <h1 class="banner-title">About us</h1>
+                </div>
+            </header>
+        </section>
+        <section>
+            <div class="about">
+
+                <h1>Apna Canteen</h1>
+                <div class="aboutblock">
+                    <div class="aboutpara">
+                        <p>Welcome to Apna Canteen, your one-stop-shop for delicious, nutritious, and affordable meals delivered straight to your doorstep!
+                            We understand the struggles of trying to find good food on a busy schedule, which is why we're here to make it easy for you. 
+                            Our mission is to provide convenient access to a variety of tasty and healthy meals that you can enjoy at any time of the day.
+                            We partner with local canteens and food vendors to offer a diverse range of cuisines that cater to different tastes and dietary preferences. 
+                            From traditional home-style meals to international delicacies, we have something for everyone.
+                            With our easy-to-use app, you can browse through our menu, place an order, and track your delivery in real-time. 
+                            Our delivery team ensures that your food arrives fresh, hot, and on time, so you never have to worry about a thing.
+                            We take pride in providing exceptional customer service and maintaining the highest standards of food quality and hygiene. 
+                            We believe that everyone deserves access to delicious and healthy meals, and we're here to make that a reality.
+                            Thank you for choosing Apna Canteen as your go-to food delivery app. We look forward to serving you!
+                        </p>
+                    </div>
+                    <div class="aboutimage">
+                        <img src="./images/EGG_IMAGE.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="weoffer">
+                <h1>What we offer</h1>
+                <div class="cards">
+                    <div class="card3">
+                        <img src="./images/provide/EGG.png" alt="">
+                        <h3>Breakfast</h3>
+                        <div>
+                            Idli and sambar, Masala dosa, Upma, Chole Bhature, Uttapam. 
+                        </div>
+                    </div>
+                    <div class="card3 mid">
+                        <img src="./images/provide/LUNCH.png" alt="">
+                        <h3>Lunch</h3>
+                        <div>Biryani, Dal Makhani, Rice, Aloo Gobi, fried rice.</div>
+                    </div>
+                    <div class="card3">
+                        <img src="./images/provide/SNACKS.png" alt="">
+                        <h3>Snacks and drinks</h3>
+                        <div>
+                           Lime, cola , pepsi, shakes, samosa, vada.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="missionandvision">
+                <p class="mvhead">Mission and Vision</p>
+                <div class="box">
+                    <div class="mission">
+                        <img src="./images/ourmission.jpg" alt="">
+                        <div class="p">
+                            <div class="mhead">
+                                <p>OUR MISSION
+                                </p>
+                            </div>
+                            <p>At Apna Canteen, our mission is to provide convenient, affordable, and healthy food options to people on-the-go. We aim to connect our customers with a diverse range of local canteens and food vendors, offering traditional and international cuisines that cater to different tastes and dietary preferences.
+
+                                We strive to offer a seamless and user-friendly food delivery experience, enabling our customers to easily browse our menu, place an order, and track their delivery in real-time. Our delivery team ensures that all orders are promptly and safely delivered, with food that is always fresh, hot, and of the highest quality.</p>
+                        </div>
+                    </div>
+                    <div class="vision">
+                        <img src="./images/our vision.jpg" alt="">
+                        <div class="p">
+                            <div class="mhead">
+                                <p>OUR VISION</p>
+                            </div>
+                            <p>India, connecting people with their favorite local food vendors and promoting healthy and sustainable food choices.
+
+                                We aim to transform the way people access and enjoy food, by leveraging technology to provide a seamless and personalized food delivery experience. We envision a future where people can easily and affordably access a diverse range of healthy and delicious meals, tailored to their individual tastes and dietary preferences.
+                                
+                                We strive to build a vibrant and inclusive food community, where food vendors, customers, and partners can connect, share ideas, and collaborate to create new and exciting food experiences. We believe in the power of food to bring people together and promote cultural exchange, and we are committed to celebrating and preserving the rich diversity of Indian cuisine.
+                                
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="form2">
+                    <h1>Contact Form</h1>
+                    <form class="formgroup1" action="{{url_for('contact')}}" method="post" autocomplete="off">
+                        <div class="form-element">
+                            <div><label for="name">Name :</label></div>
+                            <input type="text" name="username" id="username" placeholder="Enter your name" />
+                        </div>
+                        <div class="form-element">
+                            <div>
+                                <label for="text">Email-id :</label>
+                            </div>
+                            <input type="email" name="email" id="email" placeholder="Enter your name" />
+                        </div>
+                        <div class="form-element">
+                            <div>
+                                <label for="review">Message :</label>
+                            </div>
+                            <input type="text" name="message" id="message" placeholder="Enter your Message"
+                                style="height: 76px" />
+                            <button type="submit" class="btn btn-primary btn-block"
+                                style="position: relative; left: 5rem !important;">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="site-map">
+                    <h1>Site-map</h1>
+                    <ul class="pages">
+                        <li><a href="#"> Breakfast</a></li>
+                        <li><a href="#"> Lunch</a></li>
+                        <li><a href="#"> Snacks</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Write a reccomendation</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <div class="img">
+                        <img src="../static/Group 718.jpg" alt="" />
+                        <!-- <h1></h1> -->
+                    </div>
+                    <div class="para">
+                        <p1>Phone no.: xxxxxxxx96</p1>
+                        <p1>Email-id: x@gmail.com</p1>
+                        <p1>Address: lpu College, punjab
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>Your Cart</h2>
+                <div class="cart-content">
+                    <!-- Cart items-->
+                </div>
+                <div class="cart-footer">
+                    <h3>your total : ₹<span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">Clear Cart</button>
+                </div>
+                <div class="sendmail">
+                    <a href="{{url_for('booked')}}" method="post" autocomplete="off"><button
+                            type="submit">Confirm</button></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./scripts/app.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>

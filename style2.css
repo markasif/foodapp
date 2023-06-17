@@ -1,0 +1,51 @@
+/* import poppins font from google API  */
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --body-color: #c0a8e6;
+  --sidebar-color: #fff;
+  --primary-color: #6f0b8d;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #dddd;
+  --text-color: #707070;
+
+  /* Transition */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3 ease;
+  --tran-04: all 0.4 ease;
+  --tran-05: all 0.5 ease;
+}
+
+.body {
+  height: 100vh;
+  background: var(--body-color);
+}
+/* reusable css */
+
+/* *****Sidebar****** */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background: var(--sidebar-color);
+}
+.sidebar .image-text img {
+  width: 40px;
+  border-radius: 6px;
+}
+
+.sidebar header .image-text{
+     display: flex;
+     align-items: center;
+}
